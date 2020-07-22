@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script>   
+   $(document).ready(function() {
+    $("#show_menu").click(function () {
+      $( ".list_container" ).show(3000);
+    });  
+    $("#hide_menu").click(function () {
+      $( ".list_container" ).hide(3000);
+    }); 
+  });
+</script>
+</head>
+<body>
+<div class="list_container" style="display:none;">
+<ul>
+<li><iframe height="230" width="240"src="https://www.youtube.com/embed/16eD47oOpH8" style="display: inherit; margin-right: 2em;"></iframe></li>
+<li><iframe height="230" width="240"src="https://www.youtube.com/embed/16eD47oOpH8" style="display: inherit; margin-right: 2em;"></iframe></li>
+<li><iframe height="230" width="240"src="https://www.youtube.com/embed/16eD47oOpH8" style="display: inherit; margin-right: 2em;"></iframe>
+</ul>
+</div>
+<input type="button" class="btn btn-primary" id="show_menu" value="Show Videos">
+<input type="button" class="btn btn-primary" id="hide_menu" value="Hide Videos">
+</body>
+</html>

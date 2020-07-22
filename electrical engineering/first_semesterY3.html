@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PowerFile </title >
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+<link rel="manifest" href="../favicon_io/site.webmanifest">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/first.css">
+<link rel="stylesheet" href="../css/second.css">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="../bootstrap.min_3.css">
+<script src="../all.js"></script>
+<link type="text/css" rel="stylesheet" href="../dist/css/jquery.jConveyorTicker.min.css" />
+<script type="text/javascript" src="../AP/web/jquery.js"></script>
+<script type="text/javascript" src="../AP/web/ajax-poll.php"></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  .ul a i{
+    margin-right: 16px;
+  }
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<?php include('../navbar.html') ?>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left " id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>First Semester</b></h4>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Analogue Communication Systems</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Classical Control Systems</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Electrical Servises Design</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Linear Electronics</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Microprocessors</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Numerical Analysis</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Power Generation Supply</a></li>
+  <li style="list-style-type: none;"><a style="text-decoration: none;"class="w3-bar-item w3-button w3-hover-black "href="#">Probability & Statistics</a></li>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <?php include("../dist/news.html") ?>
+      <?php include('content_Y3_1S.html') ?>
+    </div>
+    <?php include("../constant.html") ?>
+  </div>
+
+  
+  
+  <!-- Pagination -->
+  
+  
+  <?php include('../footer.php' ) ?>
+  
+    
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+<script src="../dist/js/jquery.jConveyorTicker.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

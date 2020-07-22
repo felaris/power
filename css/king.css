@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   list-style:none;
+   text-decoration: none;
+}
+
+#header {
+    
+    
+    text-align:left;
+    padding:6px;
+    height: 50px;
+    text-decoration: none;
+    font-size:20px;
+    background-image:url(C:../../Users/User/Desktop/gyimah/images/img5.jpg)
+
+}
+
+#header h1{
+    float: left;
+    margin-top: 5px;
+    color: white;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+
+
+#header ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#header ul li{
+    display: inline-block;
+}
+#header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+
+}
+#header ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+#navigation{
+    line-height: 40px;
+    background-color: #042331;
+    height: 2000px;
+    width: 250px;
+    float: left;
+    padding:5px;
+}
+
+#navigation header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: #063146;
+    user-select: none;
+    height: 100;
+}
+
+#navigation ul a {
+    display: block;
+    height: 100%;
+    width: 100%
+    line-height:65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    
+}
+
+
+#navigation ul li:hover a{
+    padding-left: 50px;
+
+}
+
+
+
+
+#navigation ul a i{
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section{
+    width: 350px;
+    float: left;
+    padding: 10px;
+    clear: right;
+
+}
+
+
+#section article h2{
+    right: 900px;
+}
+
+#section article p{
+    border: 5px solid #cccccc; 
+    padding: 20px; 
+    width: 600px; 
+    text-align: center; 
+    border-radius: 10px;
+    margin: 10px;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px 
+}
+
+#section aside h2{
+    position: relative; 
+    top: -300px; 
+    left: 920px; 
+    width: 312px;
+    border: 5px groove #cccccc;
+    border-color: blue;
+    border-radius: 10px;
+    box-shadow: 0 10 10px #777777;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 15px 
+      
+}
+
+
+#section aside ul li{
+    position:relative;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    font-size: 20px;
+    font-style: normal;
+    top: -300px; 
+    left: 900px;
+    border-spacing: 165px ;
+    border: 5px groove #cccccc; 
+    padding: 20px; 
+    width: 275px; 
+    text-align: center; 
+    border-radius: 10px;
+    margin:20px;
+    box-shadow: 0 10 10px #777777;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 15px; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#foot{
+    background-color: grey;
+    color:white;
+    text-align:center;
+    padding:6px;
+    clear:both;
+    height: 30px;
+    margin-left: 0px;
+    
+}
+
